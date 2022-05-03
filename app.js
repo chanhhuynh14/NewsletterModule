@@ -53,7 +53,7 @@ app.post("/",function(req, res){
     request.write(jsonData);
     request.end();
 })
-app.listen(process.env.post | 3000 , function(){
+app.listen(process.env.POST || 3000 , function(){
     console.log("Open port 3000");
 });
 
